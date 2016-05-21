@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MovieReviews">
+
+    <ImageView
+        android:id="@+id/TitleBar"
+        android:background="@color/colorPrimary"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp" />
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_alignTop="@id/TitleBar"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/TitleBar"
+        android:layout_marginLeft="7dp"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:text="Reviews"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:id="@+id/BackButton5"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back_button"
+        android:layout_alignTop="@id/TitleBar"
+        android:onClick="goBackReview"
+        android:layout_alignBottom="@id/TitleBar"
+        android:layout_alignLeft="@id/TitleBar"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/ghostPic"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ghost"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvReviews"
+        android:layout_below="@id/TitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
