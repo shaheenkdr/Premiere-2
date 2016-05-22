@@ -22,7 +22,7 @@
         <activity android:name=".Activities.MainActivity" />
         <activity android:name=".Activities.MovieLauncher" />
         <activity android:name=".Activities.MovieReviews" />
-        <activity android:name=".Activities.TabActivity" android:screenOrientation="portrait" ></activity>
+        <activity android:name=".Activities.TabActivity"  ></activity>
     </application>
 
 </manifest>
